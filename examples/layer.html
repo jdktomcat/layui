@@ -143,14 +143,12 @@ layui.use(['layer', 'util'], function(layer, util){
         skin: 'layui-layer-border', 
         area: ['1000px', '580px'], 
         content: $('#test11111'),
-        maxmin: true,
         shade: false,
         minStack: false, // 最小化不堆叠在左下角
         id: 'page-1', // 定义 ID，防止重复弹出
-        min: function(layero, index){
-          layer.msg('阻止了默认的最小化');
-          layer.style(index, {top: 'auto', bottom: 0});
-          return false;
+        btn:['保存','取消'],
+        btn1:function(){
+          
         }
       });
     }
